@@ -19,6 +19,8 @@ Note this builds on the [Binder example for the RISE plugin for presentations](h
 
 This repo is designed as a guide for making repositories where both Jupyter-RISE and an R kernel work. Copy it as a template using the `Use this template` button and add in your own content. Don't forget to edit the code for the badges to point at your repository.
 
+The default **notebook cells not optimized for a slideshow presentation at this time**. Specifically, the current visuals are not formatted to fit the slide. This is just a strarting point for now. 
+
 -----
 
 
