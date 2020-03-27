@@ -1,10 +1,61 @@
-# fomightez/Jupyter-RISE-R
+# Jupyter-RISE with an R kernel available
 
-Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/Jupyter-RISE-R/master?filepath=index.ipynb)
+Jupyter-RISE+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/Jupyter-RISE-R/master?filepath=index.ipynb)
 
 RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/Jupyter-RISE-R/master?urlpath=rstudio)
 
 RShiny: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/Jupyter-RISE-R/master?urlpath=shiny/bus-dashboard/)
+
+Click a `launch binder` badge anywhere on this page to begin.
+
+-----
+
+Note this builds on the [Binder example for the RISE plugin for presentations](https://github.com/binder-examples/jupyter-rise) to add the R kernel as well. **No installation needed**. 
+
+
+----
+
+## How to use
+
+This repo is designed as a guide for making repositories where both Jupyter-RISE and an R kernel work. Copy it as a template using the `Use this template` button and add in your own content. Don't forget to edit the code for the badges to point at your repository.
+
+-----
+
+
+
+## About Jupyter-RISE
+
+RISE allows you to quickly generate a live, interactive presentation from a
+Jupyter Notebook that is connected to the underlying Kernel of the notebook.
+Using a new feature for automatically launching
+the RISE plugin when a notebook is opened, RISE can be used to share interactive
+presentations that run in the cloud with Binder.
+This repository demonstrates how to accomplish this.
+
+To make your RISE presentation automatically-launch with it is open,
+add an `autolaunch=true` configuration
+parameter to a notebook's `livereveal` section in the
+metadata. E.g.:
+
+```
+...
+"livereveal": {
+        "autolaunch": true
+        }
+...
+```
+
+When the notebook is launched, your
+presentation will automatically begin.
+
+See the [RISE Documentation](https://damianavila.github.io/RISE/)
+for more information.
+
+If you don't need the hide_code extension enabled along with Jupyter-RISE, you may be more interested in the [Binder example for the RISE plugin for presentations](https://github.com/binder-examples/jupyter-rise)
+
+
+-----
+## R and RStudio use
 
 Binder supports using R and RStudio, with libraries pinned to a specific 
 snapshot on [MRAN](https://mran.microsoft.com/documents/rro/reproducibility).
@@ -38,3 +89,14 @@ you will need (1) to put in the final slash in the URL, and (2) to avoid convert
 spaces-'%20'-in the URL, instead placing a hyphen.
 
 **Note:** An alternative is to use the excellent [holepunch package for R](https://karthik.github.io/holepunch/articles/getting_started.html).
+
+
+----
+
+## Technical notes:
+
+Thhe `hide_code` extension was described as compatible with Jupyter-RISE [here](https://github.com/damianavila/RISE/issues/32#issuecomment-493631621). And Jupyter-RISE works via BINDER as can be seen via [the OFFICIAL Binder example for the RISE plugin for presentations](https://github.com/binder-examples/jupyter-rise). Although because it has some complex requirements, it was not that easy to add hide-code along with Binder and so it wasn't straighforward for those wishing to explore the use of Jupyter-RISE in conjunction with the `hide-code` extension. Now it is. Addition and enabling of the hide_code extension for Binder worked out [here](https://github.com/fomightez/jupyter_hide_code).
+
+-----
+
+Jupyter-RISE+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/Jupyter-RISE-R/master?filepath=index.ipynb)
