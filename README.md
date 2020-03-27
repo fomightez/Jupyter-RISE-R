@@ -1,4 +1,4 @@
-# Specifying an R environment with a runtime.txt file
+# fomightez/Jupyter-RISE-R
 
 Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/Jupyter-RISE-R/master?filepath=index.ipynb)
 
